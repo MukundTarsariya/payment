@@ -22,7 +22,7 @@ app.add_middleware(
 
 
 # Connect to MongoDB
-client = MongoClient("mongodb+srv://mukundtarsariya1998:07qKnZiysC8OsCB1@payment.9jbkg.mongodb.net/?retryWrites=true&w=majority&appName=Payment")
+client = MongoClient("mongodb+srv://mukundtarsariya1998:07qKnZiysC8OsCB1@payment.9jbkg.mongodb.net/?retryWrites=true&w=majority&appName=Payment", tls=True)
 db = client['payment_db']
 collection = db['payments']
 
