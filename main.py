@@ -14,7 +14,7 @@ app = FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:4200"],  # Allow your Angular app's URL
+    allow_origins=["https://payment-ui-ten.vercel.app"],  # Allow your Angular app's URL
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
